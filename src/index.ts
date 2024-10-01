@@ -14,7 +14,7 @@ const app = new Hono().basePath("/");
 // const app = new Hono().basePath("/v1");
 
 app.use(logger(), prettyJSON());
-app.use("/", cors(corsConfig));
+app.use("*", cors(corsConfig));
 
 app.notFound((c) => c.json(notFound, 404));
 
