@@ -14,6 +14,11 @@ export const getPlayground = factory.createHandlers(async (c) => {
           desc: "route for BMKG API",
           path: `${process.env.BASE_URL}/playground/bmkg`,
         },
+        {
+          label: "Midtrans",
+          desc: "create transaction token for midtrans snap",
+          path: `${process.env.BASE_URL}/playground/midtrans`,
+        },
       ],
     },
   };
