@@ -11,7 +11,7 @@ import { index } from "./feat/index/index.route";
 import { playground } from "./feat/playground/playground.route";
 
 const app = new Hono().basePath("/");
-// const app = new Hono().basePath("/v1");
+// const app = new Hono().basePath("/v1")
 
 app.use(logger(), prettyJSON());
 app.use("*", cors(corsConfig));
